@@ -1,6 +1,5 @@
 # mealbuddy
 
-
 ### Description
 
 Mealbuddy is a meal planning website to help you with your dietary goals!
