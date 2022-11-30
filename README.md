@@ -1,2 +1,3 @@
 # meal-buddy
-cubstart final project! 
+
+### Usage
