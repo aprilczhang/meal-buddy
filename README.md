@@ -3,7 +3,7 @@
 
 ### Vision 👓
 
-As current college students, we've noticed that healthy meal planning is seems to me a common struggle. We hope that this site can help everyone eat healthier and happier! 🫀
+As current college students, we've noticed that healthy meal planning is seems to me a common struggle. We hope that this site can help everyone eat healthier and happier!
 
 ### Description 🥬
 
@@ -12,11 +12,11 @@ Mealbuddy is a meal planning website to help you with your dietary goals! You ca
 Mealbuddy saves all your past generated recipes and has a built in grocery list for all your shopping needs!
 
 
-### Usage
+### Usage 🔖
 
 Visit mealbuddy at: <insert link here>!
 
-### Collaborators
+### Collaborators 🏡
 
 - April Zhang
 - Jessica Ng
