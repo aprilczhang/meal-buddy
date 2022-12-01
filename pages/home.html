@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>mealbuddy</title>
-    <link rel="stylesheet" href="./css/sign-in.css">
-    <link rel="icon" href="https://img.icons8.com/material-rounded/24/000000/vegan-food.png">
-  </head>
-  <body>
-    <main>
-        <h1>home page</h1>  
-    </main>
-	<script src="index.js"></script>
-  </body>
+    <link rel="stylesheet" href="home.css"/>
+    <title>Meal Buddy</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h2 id="name">Meal Buddy</h2>
+        <h1>enter food likes <input type="text" id="likes"/></h1>
+        <button id="submit">generate</button>
+    </div>
+    <div id="food">
+        <h2 id="recipeimg"></h2>
+        <p id="recipelink"></p>
+    </div>
+</body>
+<script src="script.js"></script>
 </html>
