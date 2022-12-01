@@ -10,21 +10,30 @@
   </head>
   <body>
     <main>
-        <menu>
-        <h3>mealbuddy</h3>
-        </menu>
+        <nav>
+          <div class="name">mealbuddy</div>
+          <div class="menu">
+            <ul>
+              <li><a href="../pages/home.html"><img src="../images/home.png" style="width: 75px; height: auto; margin-top: 7px;"/></a></li>
+              <li><a href="../pages/profile.html"><img src="../images/profile.png" style="width: 75px; height: auto; margin-top: 7px;"/></a></li>
+            </ul>
+          </div>
+        </nav>
         
-        <img src="../images/bread.png" class="logo-image" style="width:18em; height:15em;"/>
-
-        <div>
-          <form id="login-form">
-            <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
-            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
-            <input type="submit" value="Login" id="login-form-submit">
-          </form>
-
+        <div class="body-content">
+          <div class="header-content">
+            <img src="../images/bread.png" class="bread"/>
+            <h1 style="margin-left: 30%; font-weight: 500;">Log in</h1>
+          </div>
+          <div class="login-content"> 
+            <form id="login-form">
+              <input type="text" name="username" id="username-field" class="login-form-field" placeholder=" Email">
+              <input type="password" name="password" id="password-field" class="login-form-field" placeholder=" Password">
+              <input type="submit" value="Login" id="login-form-submit">
+            </form>
+          </div>
+          <p> Don't have an account? Sign up.</p>
         </div>
-        
     </main>
 	<script src="sign-in.js"></script>
   </body>
