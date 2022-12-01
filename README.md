@@ -3,7 +3,7 @@
 
 ### Vision 👓
 
-As current college students, we've noticed that healthy meal planning is seems to be a common struggle. We hope that this customizable recipes and meals can help everyone eat healthier and happier!
+As current college students, we've noticed that healthy meal planning seems to be a common struggle. We hope that this customizable recipe generator and meal planner can help everyone eat healthier and happier!
 
 ### Description 🥬
 
