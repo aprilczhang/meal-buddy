@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>Meal Buddy</title>
 </head>
 <body>
-    <div class="wrapper">
-        <h2 id="name">Meal Buddy</h2>
-        <h1>enter food likes <input type="text" id="likes"/></h1>
+    <div id="toprectangle">
+        <h1 id="top_left_text"><strong>MEAL BUDDY</strong></h1>
+        <button id="homerectangle">home</button>
+        <button id="profilerectangle">profile</button>
+        <button id="signinrectangle">sign in</button>
+    </div>
+    <div class="wrapper"></div>
+    <div id="rectangle">
+        <h2 id="name">Meal Generator</h2>
+        <h1 id="enter">enter 3 preferred ingredients <input type="text" id="likes"/></h1>
         <button id="submit">generate</button>
     </div>
     <div id="food">
