@@ -1,0 +1,62 @@
+menu{
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+
+    background: #7C9677;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.login-form-field{
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #E4E4E3;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 399px;
+    height: 50px;
+}
+
+.logo-image{
+    top: 300px;;
+}
+
+#login-form {
+    position: absolute;
+    width: 399px;
+    height: 77px;
+    top:300px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 200px;
+    left: 325px;
+    border-radius: 20px;
+    
+}
+
+
+#login-form-submit {
+    width: 160px;
+    height: 50px;
+    padding: 7px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: #3a3a3a;
+    cursor: pointer;
+    outline: none;
+}
