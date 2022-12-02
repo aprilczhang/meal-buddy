@@ -1,0 +1,116 @@
+nav{
+    position: absolute;
+    width: 100vw;
+    height: 75px;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    background: #C1D8BC;
+}
+
+nav ul {
+    display: flex; /* 5 */
+    list-style: none; /* 6 */
+    justify-content: center;
+}
+
+.menu{
+    display: flex;
+    gap: 1em;
+    margin-top: -75px;
+    margin-left: 1200px;
+    
+}
+
+.name{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 18px;
+    margin-left: 25px;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    justify-items: center;
+    align-items: center;
+}
+
+.bread {
+    width:11.5em;
+    height:9.5em;
+    margin-top: 75%;
+    left: 50%;
+}
+
+input::placeholder {
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+.menu-icon{
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+    height: 10px;
+    width: auto;
+    background-color: red;
+}
+
+
+.login-form-field{
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #E4E4E3;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+    height: 45px;
+}
+
+.body-content{
+    align-self: flex-start;
+    display: grid;
+    justify-items: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-content{
+    align-self: flex-start;
+    display: grid;
+    justify-items: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-form {
+    position: absolute;
+    width: 400px;
+    height: 77px;
+    top:25%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 200px;
+    left: 325px;
+    border-radius: 20px;
+    
+}
+
+
+#login-form-submit {
+    width: 160px;
+    height: 50px;
+    padding: 7px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: #3a3a3a;
+    cursor: pointer;
+    outline: none;
+}
