@@ -9,16 +9,13 @@
     <link rel="icon" href="https://img.icons8.com/material-rounded/24/000000/vegan-food.png">
   </head>
   <body>
-    <main>
-        <nav>
-          <div class="name">mealbuddy</div>
-          <div class="menu">
-            <ul>
-              <li><a href="../pages/home.html"><img src="../images/home.png" style="width: 75px; height: auto; margin-top: 7px;"/></a></li>
-              <li><a href="../pages/profile.html"><img src="../images/profile.png" style="width: 75px; height: auto; margin-top: 7px;"/></a></li>
-            </ul>
-          </div>
-        </nav>
+      <div id="top-rectangle">
+        <h1 id="top_left_text"><strong>mealbuddy</strong></h1>
+        <button id="homerectangle">home</button>
+        <button id="profilerectangle">profile</button>
+        <button id="signinrectangle">sign in</button>
+      </div>
+
         
         <div class="body-content">
           <div class="header-content">
@@ -32,9 +29,11 @@
               <input type="submit" value="Login" id="login-form-submit">
             </form>
           </div>
-          <p> Don't have an account? Sign up.</p>
+          <div class="sign-up">
+            <p style="margin-top: 30px;"> Don't have an account? <a id="signInBtn">Sign up with Google.</a></p>
+          </div>
         </div>
-    </main>
+   
 	<script src="sign-in.js"></script>
   </body>
 </html>
