@@ -68,6 +68,13 @@ body {
     color: white;
 }
 
+#invisiblerectangle{
+    color: #ff0000;
+    top: 0px;
+    width: 100%;
+    height: 130px;
+}
+
 #rectangle {
     width: 937px;
     height: 350px;
@@ -172,11 +179,33 @@ input[type=text]:focus {
     transition: all 0.3s;
 }
 
-#weather {
-    font-size: 2rem;
-    color: white;
+#recipelink {
+    color: rgb(96, 61, 35);
+    text-shadow: 2px 2px 3px rgb(139, 128, 113);
 }
 
-#weatherDescription {
-    text-transform: capitalize;
+#recipelink1 {
+    color: rgb(96, 61, 35);
+    text-shadow: 2px 2px 3px rgb(139, 128, 113);
+}
+
+#recipeimg{
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border: 2px solid #0c5c0a;
+}
+
+#recipeimg1{
+    margin-bottom: 30px;
+    border-radius: 15px;
+    border: 2px solid #0c5c0a;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+    padding: 5px;
 }

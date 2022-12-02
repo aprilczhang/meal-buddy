@@ -1,11 +1,13 @@
-rUrl = 'https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?ingredients=';
-extra = "&ignorePantry=true&ranking=1";
-//extraa = "apples%2Cflour%2Csugar&number=5"
+apiKey = "57991a26a3374e2689fb241bc4e5960a";
+rUrl = "https://api.spoonacular.com/recipes/findByIngredients?apiKey=";
+extra = "&ingredients=";
 
 submitButton = document.getElementById("submit");
 likes = document.getElementById("likes");
 recipeimg = document.getElementById("recipeimg");
 recipelink = document.getElementById("recipelink");
+recipeimg1 = document.getElementById("recipeimg1");
+recipelink1 = document.getElementById("recipelink1");
 
 submitButton.addEventListener("click", function () {
   if (likes.value != "") {
@@ -17,34 +19,32 @@ async function setRecipe(ingredients) {
     let recipeData = await getRecipe(ingredients)
     const img = recipeData.img
     const lnk = recipeData.lnk
-    recipelnk.innerHTML = lnk;
-    recipeimg.innerHTML = img;
+    const img1 = recipeData.img1
+    const lnk1 = recipeData.lnk1
+
+    recipelink.innerHTML = lnk;
+    recipelink1.innerHTML = lnk1;
+    recipeimg.src = img;
+    recipeimg1.src = img1;
   }
 
 
 async function apiCall(url) {
-  const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': 'd525aa0c5emsh30cae1757cc95afp1cb69ejsn5a56dd9bdd05',
-      'X-RapidAPI-Host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com'
-    }
-  };
-  
-  fetch(url, options)
-    .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err));
+  let response = await fetch(url)
+  let data = await response.json()
+  return data
 }
 
 
 async function getRecipe(ingredients) {
-  const str = ingredients.split(",");
-  const spliced = str[0] + "%2C" + str[1] + "%2C" + str[2] + "&number=5";
-  let formattedUrl = rUrl + spliced + extra;
+  let formattedUrl = rUrl + apiKey + extra + ingredients + "&number=5";
   let data = await apiCall(formattedUrl)
   return {
     "img": data[0].image,
-    "lnk": data[0].title
+    "lnk": data[0].title,
+    "img1": data[1].image,
+    "lnk1": data[1].title
   }
 }
+
+
