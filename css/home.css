@@ -101,7 +101,7 @@ body {
     top: 227px;
     background: #EFECE4;
     box-shadow: 0 6px rgba(0, 0, 0, 0.25);
-    border-radius: 30px
+    border-radius: 30px;
 }
 
 
@@ -194,22 +194,24 @@ input[type=text]:focus {
 
 #recipelink {
     color: rgb(96, 61, 35);
-    text-shadow: 2px 2px 3px rgb(139, 128, 113);
+    text-decoration-line: underline;
+    text-decoration-style: double;
 }
 
 #recipelink1 {
     color: rgb(96, 61, 35);
-    text-shadow: 2px 2px 3px rgb(139, 128, 113);
+    text-decoration-line: underline;
+    text-decoration-style: double;
 }
 
 #recipeimg{
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     border-radius: 20px;
     border: 2px solid #0c5c0a;
 }
 
 #recipeimg1{
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     border-radius: 15px;
     border: 2px solid #0c5c0a;
 }
@@ -222,24 +224,11 @@ input[type=text]:focus {
     flex: 50%;
     padding: 5px;
 }
-
-.container {
+  
+.btn {
     position: relative;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .container img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .container .btn {
-    position: absolute;
-    top: 12%;
-    left: 11%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    top: 5%;
+    left: 0%;
     background-color: #EFECE4;
     color: black;
     font-size: 16px;
@@ -248,21 +237,19 @@ input[type=text]:focus {
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
-    
+    margin-bottom: 20px;
   }
   
-  .container .btn:hover {
+  .btn:hover {
     background-color: rgb(255, 202, 243);
     color: rgb(0, 0, 0);
     transition: all 0.3s;
   }
 
-  .container .btn1 {
-    position: absolute;
-    top: 12%;
-    left: 11%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+  .btn1 {
+    position: relative;
+    top: 5%;
+    left: 0%;
     background-color: #EFECE4;
     color: black;
     font-size: 16px;
@@ -271,10 +258,10 @@ input[type=text]:focus {
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
-    
+    margin-bottom: 20px;
   }
   
-  .container .btn1:hover {
+  .btn1:hover {
     background-color: rgb(255, 202, 243);
     color: rgb(0, 0, 0);
     transition: all 0.3s;
@@ -283,10 +270,10 @@ input[type=text]:focus {
 #cover{
     position: absolute;
     background-color: #E7F0E5;
-    width: 150px;
-    height: 80px;
-    left: 45%;
-    top: 78.5%;
+    width: 500px;
+    height: 150px;
+    left: 30%;
+    top: 68%;
 }
 
 a {
@@ -296,16 +283,15 @@ a {
     font-family: 'Inter', sans-serif;
 }
 
-#heart1{
-    width: 20px;
-    height: 20px;
-    padding: none;
-    margin: none;
+#listtitle{
+    color:rgb(96, 61, 35);
+    font-family: 'Inter';
+    font-style: italic;
 }
 
-#heart{
-    width: 20px;
-    height: 20px;
-    padding: none;
-    margin: none;
+#list{
+    text-align: left;
+    color:rgb(96, 61, 35);
+    font-family: 'Inter';
+    padding-bottom: 50px;
 }
