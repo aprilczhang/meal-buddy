@@ -5,35 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>mealbuddy</title>
+
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js"></script>
+
     <link rel="stylesheet" href="../css/sign-in.css">
     <link rel="icon" href="https://img.icons8.com/material-rounded/24/000000/vegan-food.png">
   </head>
   <body>
       <div id="top-rectangle">
         <h1 id="top_left_text"><strong>mealbuddy</strong></h1>
-        <button id="homerectangle">home</button>
-        <button id="profilerectangle">profile</button>
-        <button id="signinrectangle">sign in</button>
+        <a id="homerectangle" href="../pages/home.html" style="padding-left:20px;">home</a>
+        <a id="profilerectangle" href="../pages/profile.html" style="padding-left:20px;">profile</a>
+        <a id="signinrectangle" href="../pages/sign-in.html" style="padding-left:20px;">sign in</a>
       </div>
 
         
         <div class="body-content">
           <div class="header-content">
             <img src="../images/bread.png" class="bread"/>
-            <h1 style="margin-left: 30%; font-weight: 500;">Log in</h1>
+            <h1 style="margin-left: 30%; font-weight: 500;">Sign up</h1>
           </div>
           <div class="login-content"> 
             <form id="login-form">
-              <input type="text" name="username" id="username-field" class="login-form-field" placeholder=" Email">
+              <input type="text" name="name" id="name-field" class="login-form-field" placeholder="Full name">
+              <input type="text" name="email" id="username-field" class="login-form-field" placeholder=" Email">
               <input type="password" name="password" id="password-field" class="login-form-field" placeholder=" Password">
-              <input type="submit" value="Login" id="login-form-submit">
+              <button id="signInBtn" class="signup-form-submit">Sign in with Google</button>
             </form>
           </div>
           <div class="sign-up">
-            <p style="margin-top: 30px;"> Don't have an account? <a id="signInBtn">Sign up with Google.</a></p>
+            <p style="margin-top: 125px;"> Have an account? <a onclick="login()">Log in here.</a></p>
           </div>
         </div>
-   
-	<script src="sign-in.js"></script>
   </body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script type="module" src="../js/signin.js"></script>
 </html>
+

@@ -1,0 +1,19 @@
+{
+  "name": "meal-buddy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aprilczhang/meal-buddy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aprilczhang/meal-buddy/issues"
+  },
+  "homepage": "https://github.com/aprilczhang/meal-buddy#readme"
+}
