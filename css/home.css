@@ -15,7 +15,7 @@ body {
     color: white;
 }
 
-#toprectangle{
+#top-rectangle{
     width: 100%;
     height: 85px;
     left: 0px;
@@ -26,46 +26,65 @@ body {
 }
 
 #top_left_text{
-    font-style: italic;
-    font-family: 'Inter';
+    font-weight:100;
+    font-family: 'Inter', sans-serif;
     text-align: left;
     padding-left: 2%;
+    color:rgb(23, 69, 19);
 }
+
 
 #homerectangle{
     position: absolute;
     top: 9.5px;
-    right: 215px;
-    width: 65px;
-    height: 60px;
+    right: 225px;
+    width: 80px;
+    height: 40px;
     background:#618b5a;
     box-shadow: 0 6px rgb(23, 69, 19);
-    border-radius: 10px;
+    border-radius: 20px;
     color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    padding-top: 5px;
+    font-weight: 500;
 }
 
 #profilerectangle{
     position: absolute;
     top: 9.5px;
-    right: 133px;
-    width: 65px;
-    height: 60px;
+    right: 120px;
+    width: 80px;
+    height: 40px;
     background:#618b5a;
     box-shadow: 0 6px rgb(23, 69, 19);
-    border-radius: 10px;
+    border-radius: 20px;
     color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    padding-top: 5px;
+    font-weight: 500;
 }
 
+
 #signinrectangle{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
     position: absolute;
     top: 9.5px;
     right: 15px;
-    width: 100px;
-    height: 60px;
+    width: 80px;
+    height: 40px;
     background:#618b5a;
     box-shadow: 0 6px rgb(23, 69, 19);
-    border-radius: 10px;
+    border-radius: 20px;
     color: white;
+    margin-top: 5px;
+    padding-top: 5px;
+    font-weight: 500;
+
 }
 
 #invisiblerectangle{
@@ -173,12 +192,6 @@ input[type=text]:focus {
     transition: all 0.3s;
 }
 
-#rectangle:hover{
-    width: 940px;
-    height: 353px;
-    transition: all 0.3s;
-}
-
 #recipelink {
     color: rgb(96, 61, 35);
     text-shadow: 2px 2px 3px rgb(139, 128, 113);
@@ -208,4 +221,91 @@ input[type=text]:focus {
 .column {
     flex: 50%;
     padding: 5px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container .btn {
+    position: absolute;
+    top: 12%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #EFECE4;
+    color: black;
+    font-size: 16px;
+    padding: 10px 10px;
+    border: 2px solid #0c5c0a;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    
+  }
+  
+  .container .btn:hover {
+    background-color: rgb(255, 202, 243);
+    color: rgb(0, 0, 0);
+    transition: all 0.3s;
+  }
+
+  .container .btn1 {
+    position: absolute;
+    top: 12%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #EFECE4;
+    color: black;
+    font-size: 16px;
+    padding: 10px 10px;
+    border: 2px solid #0c5c0a;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    
+  }
+  
+  .container .btn1:hover {
+    background-color: rgb(255, 202, 243);
+    color: rgb(0, 0, 0);
+    transition: all 0.3s;
+  }
+
+#cover{
+    position: absolute;
+    background-color: #E7F0E5;
+    width: 150px;
+    height: 80px;
+    left: 45%;
+    top: 78.5%;
+}
+
+a {
+    font-style: normal;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+#heart1{
+    width: 20px;
+    height: 20px;
+    padding: none;
+    margin: none;
+}
+
+#heart{
+    width: 20px;
+    height: 20px;
+    padding: none;
+    margin: none;
 }

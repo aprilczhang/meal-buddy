@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="../css/home.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>Meal Buddy</title>
 </head>
 <body>
-    <div id="toprectangle">
-        <h1 id="top_left_text"><strong>MEAL BUDDY</strong></h1>
-        <button id="homerectangle">home</button>
-        <button id="profilerectangle">profile</button>
-        <button id="signinrectangle">sign in</button>
-    </div>
+    <div id="top-rectangle">
+        <h1 id="top_left_text"><strong>mealbuddy</strong></h1>
+        <a id="homerectangle" href="../pages/home.html" style="padding-left:20px;">home</a>
+        <a id="profilerectangle" href="../pages/profile.html" style="padding-left:20px;">profile</a>
+        <a id="signinrectangle" href="../pages/sign-in.html" style="padding-left:20px;">sign in</a>
+      </div>
 
     
 
@@ -31,16 +31,28 @@
     <div class="row">
         <div class="column">
             <h2 id="recipelink"></h2>
-            <img id="recipeimg" src=""/>
+            
+            <div class="container">
+                <img id="recipeimg" src=""/>
+                <button class="btn"><img id="heart" src="../images/heart.png"></button>
+            </div>
         </div>
         <div class="column">
             <h2 id="recipelink1"></h2>
-            <img id="recipeimg1" src=""/>
+            <div class="container">
+                <img id="recipeimg1" src=""/>
+                <button class="btn1"><img id="heart1" src="../images/heart.png"></button>
+            </div>
+            
         </div>
     </div>
 
+    <div id="cover"></div>
+
+    <ul id="list"></ul>
+
 </body>
-<script src="script.js"></script>
+<script src="../js/home.js"></script>
 </html>
 
 <!-- 

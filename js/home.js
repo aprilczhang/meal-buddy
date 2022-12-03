@@ -8,12 +8,28 @@ recipeimg = document.getElementById("recipeimg");
 recipelink = document.getElementById("recipelink");
 recipeimg1 = document.getElementById("recipeimg1");
 recipelink1 = document.getElementById("recipelink1");
+likebutton = document.getElementsByClassName("btn")[0];
+likebutton1 = document.getElementsByClassName("btn1")[0];
+cover = document.getElementById("cover");
+list = document.getElementById("list");
+
 
 submitButton.addEventListener("click", function () {
   if (likes.value != "") {
     setRecipe(likes.value);
   }
+  setTimeout(() => {cover.style.opacity = "0.0"; }, 500);
 });
+
+likebutton.addEventListener("click", function onClick(event) {
+  likebutton.style.backgroundColor = 'rgb(255, 202, 243)';
+});
+
+likebutton1.addEventListener("click", function onClick(event) {
+  likebutton1.style.backgroundColor = 'rgb(255, 202, 243)';
+});
+
+
 
 async function setRecipe(ingredients) {
     let recipeData = await getRecipe(ingredients)
