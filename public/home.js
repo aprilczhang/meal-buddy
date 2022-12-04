@@ -13,7 +13,6 @@ likebutton1 = document.getElementsByClassName("btn1")[0];
 cover = document.getElementById("cover");
 meallist = document.getElementById("list");
 
-
 submitButton.addEventListener("click", function () {
   likebutton.style.backgroundColor = '#EFECE4';
   likebutton1.style.backgroundColor = '#EFECE4';
@@ -27,7 +26,12 @@ likebutton.addEventListener("click", function () {
   likebutton.style.backgroundColor = 'rgb(255, 202, 243)';
   const meal = document.createElement('li')
   meal.innerHTML = recipelink.innerText;
-  meallist.appendChild(meal);
+  if (meal in meallist){
+    console.log("already added meal to liked list!")
+    return
+  } else {
+    meallist.appendChild(meal);
+  }
 });
 
 likebutton1.addEventListener("click", function () {
@@ -35,6 +39,12 @@ likebutton1.addEventListener("click", function () {
   const meal = document.createElement('li')
   meal.innerHTML = recipelink1.innerText;
   meallist.appendChild(meal);
+  if (meal in meallist){
+    console.log("already added meal to liked list!")
+    return
+  } else {
+    meallist.appendChild(meal);
+  }
 });
 
 async function setRecipe(ingredients) {
