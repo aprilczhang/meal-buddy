@@ -6,23 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>mealbuddy</title>
 
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
     <!--link rel="stylesheet" href="signin.css"-->
     <link rel="stylesheet" href="signin.css"/>
     <link rel="icon" href="https://img.icons8.com/material-rounded/24/000000/vegan-food.png">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"
+    integrity="sha512-/seDHxVfh1NvFUscAj8GsHQVZJvr2jjAoYsNL7As2FCaFHUHYIarl3sRCvVlFgyouVNiRgHIebyLKjpgd1SLDw=="
+    crossorigin="anonymous"></script>
+
+    <script type="module" defer src="sign-in.js"></script> 
   </head>
   <body>
     <div id="top-rectangle">
-      <h1 id="top_left_text"><strong>mealbuddy</strong></h1>
-      <a id="homerectangle" href="index.html" style="padding-left:20px;">home</a>
-      <a id="profilerectangle" href="profile.html" style="padding-left:20px;">profile</a>
-      <a id="signinrectangle" href="sign-in.html" style="padding-left:20px;">sign in</a>
+      <h1 id="top_left_text"><a href="index.html"style="color: #226014;"><strong>mealbuddy</strong></a></h1>
+      <a id="homerectangle" href="index.html" >home</a>
+      <a id="profilerectangle" href="profile.html">profile</a>
+      <a id="signinrectangle" href="sign-in.html">sign in</a>
     </div>
-        
-        <div class="body-content">
+
+    <div class="main-body">
+          <div class="note-box">
+            Generate any meal based on your favorite ingredients! 
+          </div>
+
+        <div class="middle-column">
           <div class="header-content">
-            <img src="bread.png" class="bread" style="width: 200px; height:auto;"/>
-            <h1 style="margin-left: 30%; font-weight: 500; color:black;">Sign in</h1>
+            <img src="bread.png" class="bread" style="margin-right: 10%;width: 200px; height:auto;"/>
+            <h1 style="font-weight: 700; color:black;">Sign in</h1>
           </div>
           <section id="whenSignedOut">
             <div class="login-content"> 
@@ -35,13 +48,13 @@
           <section id="whenSignedIn" hidden="true">
             <div id="userDetails"></div>
             <button id="signOutBtn" class="btn btn-primary">Sign Out</button>
-        
+
           </section>
         </div>
-    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
-   
+        <div class="note-box">
+          Save your generated meals and cultivate your grocery list for happier healthier eating! 
+        </div>
+    </div>
     <!-- include only the Firebase features as you need -->
     <!--<script defer src="/__/firebase/9.14.0/firebase-app-compat.js"></script>
     <script defer src="/__/firebase/9.14.0/firebase-auth-compat.js"></script>
@@ -49,6 +62,5 @@
 
   <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script defer type="module" src="sign-in.js"></script>
   </body>
 </html>

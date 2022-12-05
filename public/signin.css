@@ -41,7 +41,7 @@ body{
     position: absolute;
     top: 9.5px;
     right: 225px;
-    width: 80px;
+    width: 100px;
     height: 40px;
     background:#618b5a;
     box-shadow: 0 6px rgb(23, 69, 19);
@@ -52,13 +52,14 @@ body{
     margin-top: 5px;
     padding-top: 5px;
     font-weight: 500;
+    margin-right: 50px;
 }
 
 #profilerectangle{
     position: absolute;
     top: 9.5px;
     right: 120px;
-    width: 80px;
+    width: 100px;
     height: 40px;
     background:#618b5a;
     box-shadow: 0 6px rgb(23, 69, 19);
@@ -69,6 +70,7 @@ body{
     margin-top: 5px;
     padding-top: 5px;
     font-weight: 500;
+    margin-right: 30px;
 }
 
 
@@ -78,7 +80,7 @@ body{
     position: absolute;
     top: 9.5px;
     right: 15px;
-    width: 80px;
+    width: 100px;
     height: 40px;
     background:#618b5a;
     box-shadow: 0 6px rgb(23, 69, 19);
@@ -87,6 +89,7 @@ body{
     margin-top: 5px;
     padding-top: 5px;
     font-weight: 500;
+    margin-right:10px;
 }
 
 
@@ -132,18 +135,27 @@ input::placeholder {
     height: 30px;
 }
 
-.body-content{
+.middle-column{
     align-self: flex-start;
     display: grid;
     justify-items: center;
     align-items: center;
     justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 
 #signInBtn{
     color: white;
 }
+
+#signInBtn:hover{
+    box-shadow: 0 4px #352e27;
+	top: 2px;
+}
+
+
 
 #header-content{
     align-self: flex-start;
@@ -172,7 +184,7 @@ input::placeholder {
     border: none;
     border-radius: 20px;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
     background-color: #3a3a3a;
     cursor: pointer;
     outline: none;
@@ -184,6 +196,7 @@ input::placeholder {
 
 .signup-form-submit:hover{
     transition: all 0.3s;
+    background-color:#3a3a3a;
 }
 
 
@@ -273,4 +286,25 @@ a:hover{
     width: 940px;
     height: 353px;
     transition: all 0.3s;
+}
+
+
+.main-body{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+} 
+
+.note-box{
+    border-color: none;
+    background-color:#c1d8bc;
+    border-radius: 30px;
+    padding: 50px;
+    width: 150px;
+    height: 100px;
+    color:#3a3a3a;
+    margin-top: 500px; 
+    font-size: large;
+    font-family:'Inter', sans-serif; 
+    font-weight: 600;
 }

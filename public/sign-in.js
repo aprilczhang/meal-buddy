@@ -19,30 +19,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
-signInBtn.onclick = () => {
-  signInWithPopup(auth, provider);
-}
-
-/*
-onAuthStateChanged(auth, (user) => {
-  // user argument is null if a user signs out.
-  if (user) {
-      // If a user signs in:
-      whenSignedIn.hidden = false;
-      whenSignedOut.hidden = true;
-      userDetails.innerHTML = `<h3>Hello ${user.displayName}!</h3> <p>User ID: ${user.uid}</p>`;
-  } else {
-      //////// QUESTION 2: What happens when a user signs out? (The previous lines are a hint!) ////////
-      whenSignedIn.hidden = true;
-      whenSignedOut.hidden = false
-      ////////
-  }
-  
-});
-*/
-
-
-//signInBtn.onclick = () => signInWithPopup(auth, provider);
+signInBtn.onclick = () => signInWithPopup(auth, provider);
 
 //const db = getFirestore(app);
 //let likedRecipes = collection(db, "liked_recipes")
