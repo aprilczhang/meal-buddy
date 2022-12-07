@@ -1,0 +1,124 @@
+* {
+    font-family: sans-serif, 'Inter'
+}
+
+body {
+    background: #E7F0E5;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to top, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+}
+
+#top-rectangle{
+    width: 100%;
+    height: 85px;
+    left: 0px;
+    top: 0px;
+    padding: 0;
+    background: #c1d8bc;
+    position: fixed;
+}
+
+#top_left_text{
+    font-weight:100;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    padding-left: 2%;
+    color:rgb(23, 69, 19);
+}
+
+
+#homerectangle{
+    position: absolute;
+    top: 9.5px;
+    right: 225px;
+    width: 100px;
+    height: 40px;
+    background:#618b5a;
+    box-shadow: 0 6px rgb(23, 69, 19);
+    border-radius: 20px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    padding-top: 5px;
+    font-weight: 500;
+    margin-right: 50px;
+}
+
+#profilerectangle{
+    position: absolute;
+    top: 9.5px;
+    right: 120px;
+    width: 100px;
+    height: 40px;
+    background:#618b5a;
+    box-shadow: 0 6px rgb(23, 69, 19);
+    border-radius: 20px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    padding-top: 5px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+
+#signinrectangle{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 9.5px;
+    right: 15px;
+    width: 100px;
+    height: 40px;
+    background:#618b5a;
+    box-shadow: 0 6px rgb(23, 69, 19);
+    border-radius: 20px;
+    color: white;
+    margin-top: 5px;
+    padding-top: 5px;
+    font-weight: 500;
+    margin-right:10px;
+}
+
+.button {
+    width: auto;
+    height: 25px;
+    font-size: 15px;
+    text-align: center;
+    background: rgb(122, 86, 39);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+ 
+a {
+    font-style: normal;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+#listbackground{
+    background:rgb(255, 255, 255);
+    box-shadow: 0 6px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+#items{
+    text-align: left;
+    font-family: "Inter";
+}
