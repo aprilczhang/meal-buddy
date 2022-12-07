@@ -270,12 +270,12 @@ input[type=text]:focus {
     position: absolute;
     background-color: #E7F0E5;
     width: 500px;
-    height: 150px;
+    height: 190px;
     left: 30%;
-    top: 68%;
+    top: 64%;
 }
 
-a {
+a{
     font-style: normal;
     align-items: center;
     text-decoration: none;
