@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/aprilczhang/meal-buddy#readme",
   "dependencies": {
-    "firebase": "^9.14.0"
+    "firebase": "^9.14.0",
+    "node": "^19.2.0"
   }
 }

@@ -41,7 +41,7 @@ body{
     position: absolute;
     top: 9.5px;
     right: 225px;
-    width: 80px;
+    width: 100px;
     height: 40px;
     background:#618b5a;
     box-shadow: 0 6px rgb(23, 69, 19);
@@ -52,13 +52,14 @@ body{
     margin-top: 5px;
     padding-top: 5px;
     font-weight: 500;
+    margin-right: 50px;
 }
 
 #profilerectangle{
     position: absolute;
     top: 9.5px;
     right: 120px;
-    width: 80px;
+    width: 100px;
     height: 40px;
     background:#618b5a;
     box-shadow: 0 6px rgb(23, 69, 19);
@@ -69,6 +70,7 @@ body{
     margin-top: 5px;
     padding-top: 5px;
     font-weight: 500;
+    margin-right: 30px;
 }
 
 
@@ -78,7 +80,7 @@ body{
     position: absolute;
     top: 9.5px;
     right: 15px;
-    width: 80px;
+    width: 100px;
     height: 40px;
     background:#618b5a;
     box-shadow: 0 6px rgb(23, 69, 19);
@@ -87,6 +89,7 @@ body{
     margin-top: 5px;
     padding-top: 5px;
     font-weight: 500;
+    margin-right:10px;
 }
 
 
@@ -132,7 +135,7 @@ input::placeholder {
     height: 30px;
 }
 
-.body-content{
+.middle-column{
     align-self: flex-start;
     display: grid;
     justify-items: center;
@@ -145,46 +148,21 @@ input::placeholder {
     color: white;
 }
 
+#signInBtn:hover{
+    box-shadow: 0 4px #352e27;
+	top: 2px;
+}
+
+
+
 #header-content{
-    align-self: flex-start;
-    display: grid;
-    justify-items: space-between;
+    display: flex;
     align-items: center;
     justify-content: center;
-}
 
-#login-form {
-    width: 400px;
-    height: 77px;
-    top:20%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    left: 325px;
-    border-radius: 20px;
 }
 
 
-.signup-form-submit {
-    width: 300px;
-    height: 50px;
-    padding: 7px;
-    border: none;
-    border-radius: 20px;
-    color: white;
-    font-weight: bold;
-    background-color: #3a3a3a;
-    cursor: pointer;
-    outline: none;
-    background:#618b5a;
-    box-shadow: 0 6px rgb(23, 69, 19);
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-}
-
-.signup-form-submit:hover{
-    transition: all 0.3s;
-}
 
 
 input[type=text]{
@@ -206,29 +184,6 @@ input[type=text]:focus {
 }
 
 
-input[type=password]{
-    font-family: 'Inter';
-    color: rgb(0, 0, 0);
-    width: 60%;
-    font-size: 1.5rem;
-    height: 70px;
-    text-align: center;
-    transition: 0.6s;
-    border: none;
-    border-bottom: 2px solid #7c9677;
-    background-color: #E4E4E3;
-
-  }
-
-input[type=password]:focus {
-    outline: none;
-    border-bottom: 2px solid #226014;
-}
-
-.sign-up{
-    margin-top: 230px;
-}
-
 a {
     font-style: normal;
     align-items: center;
@@ -238,17 +193,6 @@ a {
 
 a:hover{
     text-decoration: none;
-}
-
-#submit:hover {
-	box-shadow: 0 4px #352e27;
-	top: 2px;
-}
-
-
-#submit:active {
-	box-shadow: 0 0 #352e27;
-	top: 6px;
 }
 
 #homerectangle:hover {
@@ -273,4 +217,45 @@ a:hover{
     width: 940px;
     height: 353px;
     transition: all 0.3s;
+}
+
+
+.main-body{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+} 
+
+.note-box{
+    border-color: none;
+    background-color:#c1d8bc;
+    border-radius: 30px;
+    padding: 50px;
+    width: 150px;
+    height: 100px;
+    color:#3a3a3a;
+    margin-top: 100px; 
+    font-size: large;
+    font-family:'Inter', sans-serif; 
+    font-weight: 600;
+    margin: 50px;
+    margin-top: 550px;
+}
+
+
+.info-text{
+    background: #EFECE4;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    color:rgb(0, 0, 0);
+    padding: 40px;
+    width: 550px;
+    font-size:larger;
+}
+
+.info-text:hover{
+    box-shadow: 0 4px #352e27;
+	top: 2px;
+    transition: all 0.3s;
+
 }
