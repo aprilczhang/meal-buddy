@@ -14,7 +14,7 @@ Mealbuddy saves all your past generated recipes and has a built in grocery list 
 
 ### Usage 🔖
 
-Visit mealbuddy at: link!
+Visit mealbuddy at: https://meal-buddy2.web.app/
 
 ### Collaborators 🏡
 
